@@ -27,3 +27,98 @@
     text-align: center;
     margin-top: 80%;
 }
+
+/*Mainpage1*/
+header {
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+.headerdiv {
+    float: left;
+}
+.logo {
+    width: 100px;
+    height: 100%;
+}
+#logo {
+    width: 5.2%;
+    height: 100%;
+    background-color:white;
+    margin-left: 20%;
+}
+
+#logoyazi {
+    width: 10%;
+    height: 100%;
+    background-color: seagreen;
+    text-align: center;
+}
+#logobaslik {
+    margin-top: 16%;
+}
+#searchbar {
+    width: 30%;
+    height: 100%;
+    background-color: sienna;
+}
+.search {
+    float: left;
+}
+#searchbartxtdiv{
+width: 70%;
+height: 100%;
+background-color: yellow;
+}
+#searchbtndiv {
+width: 29%;
+height: 100%;
+background-color: violet;
+}
+#searchbartxt {
+    width:88%;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+#searchbtn {
+    width: 50px;
+    height: 30%;
+    margin-top: 55%;
+}
+#hesapsepet {
+    width: 15%;
+    height: 100%;
+    background-color: tomato;
+}
+.hs {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+.dropdown {
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.sepetbtndiv {
+    margin-top: 15%;
+}
+/*Body*/
+
+/*Urunler*/
+.urunler {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    background-color: chartreuse;
+}
+.urun {
+    float: left;
+    border: 1px solid black;
+    width:25%;
+    height: 40%;
+    background-color: peachpuff;
+}
+/*Login*/
+
