@@ -1,31 +1,18 @@
 <html>
 
 <head>
-    <title>Kayıt Ol</title>
+
+    <title>Ürün Ekle</title>
     <link href="ana.css" type="text/css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="jquery.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .container {
-            height: 35%;
-        }
-
-        .row {
-            width: 50%;
-            margin-bottom: 2%;
-            margin-left: 25%;
-        }
-        #sepetbtn.btn.btn-primary {
+    #sepetbtn.btn.btn-primary {
         width: 80%;
     }
     </style>
 </head>
-
 <body>
     <header>
         <div class="headerdiv" id="logo">
@@ -61,38 +48,65 @@
                 <a href="basket.html"><button class ="btn btn-primary" id="sepetbtn">Sepet</button></a>
             </div>
         </div>
-    </header>
+    </header> <br/> <br/>
     <div class="container">
-
         <div class="row">
             <div class="col border text-center p-5 m-1">
-                <h1 class="display-5">Kayıt Ol</h1>
-                <form>
-                    <div class="form-group">
+                <h1>Eklenecek Ürünün Özellikleri Giriniz</h1> <br/>
+            <form>
+                <div class="form-group">
 
-                        Adınız <input type="text" class="form-control" id="inputad" name="ad" >
-                    </div>
-                    <div class="form-group">
+                    <label for="#">Ürün Id</label>
+                    <input type="text"  id="ekleurunıd" class="form-control">
+                  
+                </div>
+                <div class="form-group">
 
-                        Soyadınız <input type="text" class="form-control" id="inputsoyad" name="soyad" >
-                    </div> 
-                    <div class="form-group">
+                    <label for="#">Ürün Adı</label>
+                    <input type="text"  id="ekleurunad" class="form-control">
+                  
+                </div>
+                <div class="form-group">
 
-                        E-Posta <input type="email" class="form-control" id="inputEmail" name="email" placeholder="xxxxx@xxxx.com">
-                    </div>
-                    <div class="form-group">
+                    <label for="">Ürün Satıcı Adı</label>
+                    <input type="text"  id="eklesaticiad" class="form-control" >
 
-                        Şifre <input type="password" class="form-control" id="inputpw" name="pw">
-                    </div>
-                   <input type="checkbox" > Okudum Onaylıyorum
-                    
-                   <a href="mainpage1.html"><button type="button" class="btn btn-primary px-5 btn-block">Uye ol</button></a>
-                </form>
+                </div>
+                <div class="form-group">
+
+                  <label for="">Fiyatı</label>
+                  <input type="text"  id="ekleurunfiyat" class="form-control">
+                
+                </div>
+                
+                <div class="form-group">
+
+                  <label for="">Resim</label>
+                  <input type="" name="" id="" class="form-control" >
+                  
+                </div>
+                <button type="button" class="btn btn-primary btn-block">Ürünü Ekle</button>
+            </form>
+            </div>
+        </div> <br/> <br/>
+        <div class="row">
+            <div class="col border text-center p-5 m-1">
+                <h1>Silinecek Ürün Id Giriniz</h1> <br/>
+                    <form>
+                        <div class="form-group">
+
+                            <label for="#">Ürün Id</label>
+                            <input type="text"  id="silurunid" class="form-control">
+                          
+                        </div>
+
+                    </form>
+                    <button type="button" class="btn btn-primary btn-block">Ürünü Sil</button>
             </div>
 
+
         </div>
-
     </div>
-</body>
 
+</body>
 </html>

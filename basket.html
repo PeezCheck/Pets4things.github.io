@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Sepet</title>
+    <link href="ana.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        #sepetbtn.btn.btn-primary {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerdiv" id="logo">
+            <a href="mainpage1.html"><img class="logo" src="Resimler/testlogo.jpg"></a>
+        </div>
+        <div class="headerdiv" id="logoyazi">
+            <h3 id="logobaslik">PETS4THİNGS</h3>
+        </div>
+        <div class="headerdiv" id="searchbar">
+            <div class="search" id="searchbartxtdiv">
+               <input id="searchbartxt" type="text" placeholder="Aranacak Kelime Giriniz">
+            </div>
+            <div class="search" id="searchbarbtndiv">
+                <button id="searchbtn" >Ara </button>
+            </div>
+        </div>
+        <div class="headerdiv" id="hesapsepet">
+    
+            <div class="hs">                                        
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Giris Yap
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="userlogin.html">Uye Giris</a></li>
+                        <li><a href="signup.html">Kayıt ol</a></li>
+                        <li><a href="adminlogin.html">Admin Giris</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="hs" >
+                <div class="sepetbtndiv"></div>
+                <a href="basket.html"><button class ="btn btn-primary" id="sepetbtn">Sepet</button></a>
+            </div>
+        </div>
+    </header> <br/> <br/>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color: red;">
+                <div class="row" style="margin: 10px;">
+                    <div>
+                        <h1 class="float:left">Sepet</h1>
+                    </div>
+                    <div >
+                        <div style="float:right;width: 6%;">
+                            Fiyat
+                        </div>
+                        <div style="float:right;width: 16%;">
+                            Adet
+                        </div>
+                    </div><br/>
+                     <hr>
+                     
+                        <div  style="background-color: coral;"class="col-sm-2">
+                        <img src="Resimler/9728580386866.jpg" width="80" height="80">
+                        </div>
+                        <div class="col-sm-10" style="background-color: cyan;">
+                            <div class=row>
+                                New Dog Kuzu Etli & Pirinçli Yetişkin Köpek Maması 15 kg 
+                                <div style="float:right;"class="product-prices-utils">
+
+    
+                                    <div class="price">
+                                        <span style="font-size: 19px;" data-bind="html: price">69,90 TL</span>
+                                    </div>
+                                </div>
+                                <div style="float: right; width: 14%;"class="input-group">
+                                    <input style="width: 40px;
+                                    padding: 0;font-weight: 700;text-align: center;
+                                    color: #484848;float: left;height: 40px;border: none;margin: 2px 0;
+                                    border-radius: 2px;"name="quantity" class="quantity" type="number" value="1" maxlength="3" data-bind="disable: quantityFixed, value: quantity, valueUpdate: 'afterkeypress', enterkey: $parent.quantityEnterKey.bind($data, $data)">
+                                </div>
+                            </div>
+                            <div class="row" style="background-color: cyan;">Satıcı:<a href="#">New Dog</a></div>
+                            
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class=col-sm-3 style="background-color: brown;float:right;">
+                <br/> <br/>
+                <span style="float:right"></span><h3>Sipariş Özeti</h3></span>
+                <p class="quantity-detail">
+                    <span data-bind="text: cartItemTotalQuantity">1 ürün</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
