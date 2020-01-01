@@ -1,3 +1,4 @@
+<?php ?>
 <html>
 
 <head>
@@ -14,41 +15,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="headerdiv" id="logo">
-            <a href="mainpage1.html"><img class="logo" src="Resimler/testlogo.jpg"></a>
-        </div>
-        <div class="headerdiv" id="logoyazi">
-            <h3 id="logobaslik">PETS4THİNGS</h3>
-        </div>
-        <div class="headerdiv" id="searchbar">
-            <div class="search" id="searchbartxtdiv">
-                <input id="searchbartxt" type="text" placeholder="Aranacak Kelime Giriniz">
-            </div>
-            <div class="search" id="searchbarbtndiv">
-                <button id="searchbtn">Ara </button>
-            </div>
-        </div>
-        <div class="headerdiv" id="hesapsepet">
-
-            <div class="hs">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Giris Yap
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="userlogin.html">Uye Giris</a></li>
-                        <li><a href="signup.html">Kayıt ol</a></li>
-                        <li><a href="adminlogin.html">Admin Giris</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="hs">
-                <div class="sepetbtndiv"></div>
-                <a href="basket.html"><button class="btn btn-primary" id="sepetbtn">Sepet</button></a>
-            </div>
-        </div>
-    </header> <br /> <br />
+<?php include 'header.php' ?>
     <div class="container">
         <div class="row">
             
@@ -64,7 +31,7 @@
                                 </a>
                             </h5>
                         </div>
-                        <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                        <div id="section1ContentId" class="collapse out" role="tabpanel" aria-labelledby="section1HeaderId">
                             <div class="card-body">
         
                                 <form>
@@ -145,25 +112,25 @@
             <div class="col-sm-3" style="background-color: coral;">
                 <div style="text-align: center;" ><h3>Sipariş Özeti</h3></div style="float:right;">
                     <div style="text-align:center">
-                        <p data-bind="text: cartItemTotalQuantity">1 ürün</p>
+                        <p >1 ürün</p>
                     </div>
                     <div style="text-align:center">
-                        <p data-bind="text: cartItemTotalQuantity"><p>Fiyat</p></p>
+                        <p ><p>Fiyat</p></p>
                     </div>
                     <div style="text-align: center;font-size: 20;"><p>69,90 TL</p>
                     </div>
                     <div style="text-align:center">
-                        <p data-bind="text: cartItemTotalQuantity">Kargo</p>
+                        <p >Kargo</p>
                     </div>
                     <div style="text-align: center;font-size: 20;"><p>0 TL</p>
                     </div>
                     <div style="text-align:center">
-                        <p data-bind="text: cartItemTotalQuantity">Net Tutar</p>
+                        <p >Net Tutar</p>
                     </div>
                     <div style="text-align: center;font-size: 20;"><p>69.90 TL</p>
                     </div>
                     <div class="text-center" style="width: 100%;">
-                        <a href="paymentabstract.html"><button type="button" class="btn btn-block btn-primary btn-lg ">Devam Et</button></a>
+                        <a href="mainpage1.php"><button type="button" class="btn btn-block btn-primary btn-lg ">Devam Et</button></a>
                     </div><br/>
             </div>
                 

@@ -1,3 +1,4 @@
+<?php ?>
 <html>
 
 <head>
@@ -14,66 +15,32 @@
 </head>
 
 <body>
-    <header>
-        <div class="headerdiv" id="logo">
-            <a href="mainpage1.html"><img class="logo" src="Resimler/testlogo.jpg"></a>
-        </div>
-        <div class="headerdiv" id="logoyazi">
-            <h3 id="logobaslik">PETS4THİNGS</h3>
-        </div>
-        <div class="headerdiv" id="searchbar">
-            <div class="search" id="searchbartxtdiv">
-                <input id="searchbartxt" type="text" placeholder="Aranacak Kelime Giriniz">
-            </div>
-            <div class="search" id="searchbarbtndiv">
-                <button id="searchbtn">Ara </button>
-            </div>
-        </div>
-        <div class="headerdiv" id="hesapsepet">
-
-            <div class="hs">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Giris Yap
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="userlogin.html">Uye Giris</a></li>
-                        <li><a href="signup.html">Kayıt ol</a></li>
-                        <li><a href="adminlogin.html">Admin Giris</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="hs">
-                <div class="sepetbtndiv"></div>
-                <a href="basket.html"><button class="btn btn-primary" id="sepetbtn">Sepet</button></a>
-            </div>
-        </div>
-    </header> <br /> <br />
+<?php include 'header.php' ?>
     <div class="container">
         <h2>Adres Bilgileriniz</h2>
         <div class="row">
             <div class="col-sm-8" style="background-color: chartreuse;"><br/>
-                <form style="margin-left: 10%;">
+                <form style="margin-left: 10%;" action="adresekle.php" method="POST" >
                     <div class="row">
                         <div class="col-sm-5">
-                            Adınız:<input type="text" class="form-control">
+                            Adınız:<input type="text" class="form-control" name="adresad">
                         </div>
                         <div class="col-sm-5">
-                            Soyadınız:<input type="text" class="form-control">
+                            Soyadınız:<input type="text" class="form-control" name="adressoyad">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-5">
-                            E-mail:<input type="e-mail" class="form-control">
+                            E-mail:<input type="e-mail" class="form-control" name="adresemail">
                         </div>
                         <div class="col-sm-5">
-                            Telefon:<input type="number" class="form-control">
+                            Telefon:<input type="number" class="form-control" name="adrestelefon">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-5">
                             İl:
-                            <select class="form-control">
+                            <select class="form-control" name="adresil">
                                 <option>Kocaeli</option>
                                 <option>Bursa</option>
                                 <option>Trabzon</option>
@@ -81,7 +48,7 @@
                         </div>
                         <div class="col-sm-5">
                             İlçe:
-                            <select class="form-control">
+                            <select class="form-control" name="adresilce">
                                 <option>Gölcük</option>
                                 <option>Yazlık</option>
                                 <option>Yeniköy</option>
@@ -91,10 +58,9 @@
                     <div class="row">
                         <div class="col-sm-7">
                             Adress:
-                            <br /><textarea class="form-control" rows="8"></textarea>
+                            <br /><textarea class="form-control" rows="8" name="tamadres"></textarea>
                         </div>
                     </div><br/> <br/>
-
                 </form>
             </div>
             <div class="col-sm-1">
@@ -104,25 +70,25 @@
                 
                 <div style="text-align: center;" ><h3>Sipariş Özeti</h3></div style="float:right;">
                 <div style="text-align:center">
-                    <p data-bind="text: cartItemTotalQuantity">1 ürün</p>
+                    <p >1 ürün</p>
                 </div>
                 <div style="text-align:center">
-                    <p data-bind="text: cartItemTotalQuantity"><p>Fiyat</p></p>
+                    <p ><p>Fiyat</p></p>
                 </div>
                 <div style="text-align: center;font-size: 20;"><p>69,90 TL</p>
                 </div>
                 <div style="text-align:center">
-                    <p data-bind="text: cartItemTotalQuantity">Kargo</p>
+                    <p >Kargo</p>
                 </div>
                 <div style="text-align: center;font-size: 20;"><p>0 TL</p>
                 </div>
                 <div style="text-align:center">
-                    <p data-bind="text: cartItemTotalQuantity">Net Tutar</p>
+                    <p >Net Tutar</p>
                 </div>
                 <div style="text-align: center;font-size: 20;"><p>69.90 TL</p>
                 </div>
                 <div class="text-center" style="width: 100%;">
-                    <a href="paymentcard.html"><button type="button" class="btn btn-block btn-primary btn-lg ">Devam Et</button></a>
+                    <a href="paymentcard.php"><button type="button" class="btn btn-block btn-primary btn-lg ">Devam Et</button></a>
                 </div><br/>
             </div>
 

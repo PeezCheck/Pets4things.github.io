@@ -89,7 +89,7 @@ background-color: red;
 #hesapsepet {
     width: 15%;
     height: 100%;
-    background-color: tomato;
+    
 }
 .hs {
     float: left;
@@ -106,19 +106,6 @@ background-color: red;
 }
 /*Body*/
 
-/*Urunler*/
-.urunler {
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-    background-color: chartreuse;
-}
-.urun {
-    float: left;
-    border: 1px solid black;
-    width:25%;
-    height: 40%;
-    background-color: peachpuff;
-}
+
 /*Login*/
 

@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "PeezCheck61.";
@@ -17,8 +20,13 @@ $sql = "SELECT * FROM Yonetici where admin_eposta='$yoneticigiris_email' and adm
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "Giriş Yapıldı";
-} 
+    
+    while($row = $result->fetch_assoc()) {
+        $_SESSION["uye_ad"]=$row["admin_ad"];
+        $_SESSION["uye_soyad"]=$row["admin_soyad"];
+        $_SESSION["logged"]="true";
+    }
+}
 else {
     echo "Hata: " . $sql . "<br>" . $conn->error;
 }

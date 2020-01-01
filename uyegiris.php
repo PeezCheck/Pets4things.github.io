@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "PeezCheck61.";
@@ -17,11 +20,17 @@ $sql = "SELECT * FROM Uye where uye_eposta='$kullanicigiris_email' and uye_sifre
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "Giriş Yapıldı";
+
+    while($row = $result->fetch_assoc()) {
+        $_SESSION["uye_ad"]=$row["uye_ad"];
+        $_SESSION["uye_soyad"]=$row["uye_soyad"];
+        $_SESSION["logged"]="true";
+        
+    }
 } 
 else {
     echo "Hata: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-header("Location:mainpage1.html");
+header("Location:mainpage1.php");
 ?>
