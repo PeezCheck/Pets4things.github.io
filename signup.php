@@ -1,5 +1,10 @@
+<?php 
+$servername = "localhost";
+$username = "root";
+$password = "PeezCheck61.";
+$dbname = "pets4things";
+?>
 <html>
-
 <head>
     <title>Kayıt Ol</title>
     <link href="ana.css" type="text/css" rel="stylesheet">
@@ -24,6 +29,11 @@
         width: 80%;
     }
     </style>
+    <script>
+    function signup() {
+
+    }
+    </script>
 </head>
 
 <body>
@@ -61,32 +71,41 @@
                 <a href="basket.html"><button class ="btn btn-primary" id="sepetbtn">Sepet</button></a>
             </div>
         </div>
-    </header>
+    </header> <br/> <br/>
     <div class="container">
 
         <div class="row">
             <div class="col border text-center p-5 m-1">
-                <h1 class="display-5">Kayıt Ol</h1>
-                <form>
+                <h1 class="display-5">Kayıt Ol</h1><br/>
+                <form action="kaydol.php" method="POST">
                     <div class="form-group">
 
-                        Adınız <input type="text" class="form-control" id="inputad" name="ad" >
+                        Adınız <input type="text" class="form-control" id="signupadinp" name="signupad" autocomplete required>
                     </div>
                     <div class="form-group">
 
-                        Soyadınız <input type="text" class="form-control" id="inputsoyad" name="soyad" >
+                        Soyadınız <input type="text" class="form-control" id="signupsoyadinp" name="signupsoyad" autocomplete required >
+                    </div>
+                    <div class="form-group">
+
+                        E-Posta <input type="email" class="form-control" id="signupemailinp" name="signupemail" autocomplete placeholder="xxxxx@xxxx.com">
                     </div> 
                     <div class="form-group">
 
-                        E-Posta <input type="email" class="form-control" id="inputEmail" name="email" placeholder="xxxxx@xxxx.com">
+                        Telefon No <input type="number" class="form-control" id="signuptelnoinp" name="signuptel" required autocomplete >
+                    </div> 
+                    
+                    <div class="form-group">
+
+                        Şifre <input type="password" class="form-control" id="signupsifreinp" name="signupsifre" required>
                     </div>
                     <div class="form-group">
 
-                        Şifre <input type="password" class="form-control" id="inputpw" name="pw">
+                        Şifre-Tekrar <input type="password" class="form-control" id="signuppw2inp" name="signuppw2" required>
                     </div>
-                   <input type="checkbox" > Okudum Onaylıyorum
+                   <input style="margin-top:3%" class="form-checkbox" type="checkbox" > Okudum Onaylıyorum 
                     
-                   <a href="mainpage1.html"><button type="button" class="btn btn-primary px-5 btn-block">Uye ol</button></a>
+                   <input style="margin-top: 5%;" type="submit" class="btn btn-primary px-5 btn-block" value="Üye Ol">
                 </form>
             </div>
 

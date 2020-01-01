@@ -1,27 +1,17 @@
+<?php ?>
 <html>
 
 <head>
-    <title>Admin Giris</title>
+
+    <title>Ürün Ekle</title>
     <link href="ana.css" type="text/css" rel="stylesheet">
-    <script src="jquery.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        .container {
-            height: 35%;
-        }
-
-        .row {
-            width: 50%;
-            margin-bottom: 2%;
-            margin-left: 25%;
-        }
         #sepetbtn.btn.btn-primary {
-        width: 80%;
-    }
+            width: 80%;
+        }
     </style>
 </head>
 
@@ -57,32 +47,30 @@
 
             <div class="hs">
                 <div class="sepetbtndiv"></div>
-                <a href="basket.html"><button class ="btn btn-primary" id="sepetbtn">Sepet</button></a>
+                <a href="basket.html"><button class="btn btn-primary" id="sepetbtn">Sepet</button></a>
             </div>
         </div>
     </header> <br /> <br />
-
     <div class="container">
         <div class="row">
             <div class="col border text-center p-5 m-1">
-                <h1 class="display-5">Admin Giriş</h1>
-                <form>
+                <h1>Silinecek Ürün Id Giriniz</h1> <br />
+                <form action="urunsil.php" method="POST">
                     <div class="form-group">
-                        
-                        E-Posta<input type="email" class="form-control" id="inputEmail" name="email" placeholder="xxxxx@xxxx.com">
-                    </div>
-                    <div class="form-group">
-                        
-                        Şifre  <input type="password" class="form-control" id="inputPassword" name="password" placeholder="*********">
-                    </div> <br/>
-                    <a href="adminhomepage.html"><button type="button" class="btn btn-primary px-5 btn-block" >Giriş Yap</button></a>
-                </form>
-            </div>
-            
-        </div>
-        
 
+                        <label for="#">Ürün Id</label>
+                        <input type="number" id="deleteproductidinp" class="form-control" name="deleteproductid">
+
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" >Ürünü Sil</button>
+                </form>
+               
+            </div>
+
+
+        </div>
     </div>
+
 </body>
 
 </html>

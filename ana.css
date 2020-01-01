@@ -51,7 +51,7 @@ header {
 #logoyazi {
     width: 10%;
     height: 100%;
-    background-color: seagreen;
+    background-color: red;
     text-align: center;
 }
 #logobaslik {
@@ -60,7 +60,7 @@ header {
 #searchbar {
     width: 30%;
     height: 100%;
-    background-color: sienna;
+    background-color: red;
 }
 .search {
     float: left;
@@ -68,12 +68,12 @@ header {
 #searchbartxtdiv{
 width: 70%;
 height: 100%;
-background-color: yellow;
+background-color: red;
 }
 #searchbtndiv {
 width: 29%;
 height: 100%;
-background-color: violet;
+background-color: red;
 }
 #searchbartxt {
     width:88%;
@@ -95,7 +95,7 @@ background-color: violet;
     float: left;
     width: 50%;
     height: 100%;
-    background-color: blue;
+    background-color: red;
 }
 .dropdown {
     margin-left: 10%;

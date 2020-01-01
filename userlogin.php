@@ -1,3 +1,4 @@
+<?php ?>
 <html>
     <head>
         <title>Uye Giris</title>
@@ -47,7 +48,7 @@
                         <span class="caret"></span></button>
                         <ul class="dropdown-menu">
                             <li><a href="userlogin.html">Uye Giris</a></li>
-                            <li><a href="signup.html">Kayıt ol</a></li>
+                            <li><a href="signup.php">Kayıt ol</a></li>
                             <li><a href="adminlogin.html">Admin Giris</a></li>
                         </ul>
                     </div>
@@ -63,17 +64,17 @@
             
             <div class="row">
                 <div class="col border text-center p-5 m-1">
-                    <h1 class="display-5">Üye Giriş</h1>
-                    <form>
+                    <h1 class="display-5">Üye Giriş</h1><br/>
+                    <form action="uyegiris.php" method="POST">
                         <div class="form-group">
                             
-                            E-Posta Adresi <input type="email" class="form-control" id="inputEmail" name="email" placeholder="xxxxx@xxxx.com">
+                            E-Posta Adresi <input type="email" class="form-control" id="userloginemailinp" name="userloginemail" required autocomplete placeholder="xxxxx@xxxx.com">
                         </div>
                         <div class="form-group">
                             
-                            Şifre  <input type="password" class="form-control" id="inputPassword" name="password" placeholder="*********">
+                            Şifre  <input type="password" class="form-control" id="userloginpwinp" name="userloginpw" placeholder="*********">
                         </div> <br/>
-                        <a href="mainpage1.html"><button type="button" class="btn btn-primary px-5 btn-block" >Giriş Yap</button></a>
+                        <input type="submit" class="btn btn-primary px-5 btn-block" value="Giriş Yap" >
                     </form>
                 </div>
                 

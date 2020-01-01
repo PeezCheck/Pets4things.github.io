@@ -1,3 +1,4 @@
+<?php ?>
 <html>
 
 <head>
@@ -54,18 +55,18 @@
         <div class="row">
             <div class="col border text-center p-5 m-1">
                 <h1 class="display-5">İşlem Seçiniz</h1> <br/>
-                <form>
-                    
-                        
-                        <a href="addordelproduct.html"><button type=button class="btn btn-primary btn-block " >Ürün Ekle/Çıkar</button></a> <br/> 
+                <form>    
+                        <a href="addordelproduct.php"><button type=button class="btn btn-primary btn-block " >Ürün Ekle</button></a> <br/> 
+
+                        <a href="delproduct.php"><button type=button class="btn btn-primary btn-block " >Ürün Sil</button></a> <br/> 
 
                         <a href="listproduct.html"><button type=button class="btn btn-primary btn-block ">Stok Bilgisi</button> </a>
                 </form>
            
              
-        </div>
+            </div>
         
-       
+        </div>
        
     </div>
 

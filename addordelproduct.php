@@ -53,29 +53,23 @@
         <div class="row">
             <div class="col border text-center p-5 m-1">
                 <h1>Eklenecek Ürünün Özellikleri Giriniz</h1> <br/>
-            <form>
-                <div class="form-group">
-
-                    <label for="#">Ürün Id</label>
-                    <input type="text"  id="ekleurunıd" class="form-control">
-                  
-                </div>
+            <form action="urunekle.php" method="POST">
                 <div class="form-group">
 
                     <label for="#">Ürün Adı</label>
-                    <input type="text"  id="ekleurunad" class="form-control">
+                    <input type="text"  id="addproductadinp" class="form-control" name="addproductad">
                   
                 </div>
                 <div class="form-group">
 
                     <label for="">Ürün Satıcı Adı</label>
-                    <input type="text"  id="eklesaticiad" class="form-control" >
+                    <input type="text"  id="addproductsatadinp" class="form-control" name="addproductsatad" >
 
                 </div>
                 <div class="form-group">
 
                   <label for="">Fiyatı</label>
-                  <input type="text"  id="ekleurunfiyat" class="form-control">
+                  <input type="text"  id="addproductfiyatinp" class="form-control" name="addproductfiyat">
                 
                 </div>
                 
@@ -85,27 +79,11 @@
                   <input type="file" class="form-control-file border">
                   
                 </div>
-                <button type="button" class="btn btn-primary btn-block">Ürünü Ekle</button>
+                <button type="submit" class="btn btn-primary btn-block">Ürünü Ekle</button>
             </form>
             </div>
         </div> <br/> <br/>
-        <div class="row">
-            <div class="col border text-center p-5 m-1">
-                <h1>Silinecek Ürün Id Giriniz</h1> <br/>
-                    <form>
-                        <div class="form-group">
-
-                            <label for="#">Ürün Id</label>
-                            <input type="text"  id="silurunid" class="form-control">
-                          
-                        </div>
-
-                    </form>
-                    <button type="button" class="btn btn-primary btn-block">Ürünü Sil</button>
-            </div>
-
-
-        </div>
+        
     </div>
 
 </body>
